@@ -1,5 +1,5 @@
 * {
-    border: dotted 1px grey;
+    /*border: dotted 1px grey;*/
     align-self: center;
 }
 
@@ -15,9 +15,10 @@ form {
     grid-template-columns: 15% 35% 10% 40%;
 }
 
-div.form-group {
-    width: 300px;
+div {
+    width: auto;
     display: flex;
+    grid-column: 1/2;
 }
 
 h1 {
@@ -28,18 +29,22 @@ h1 {
     display: flex;
     grid-column: 4/5;
 }
-
-
-
-input.eten {
-    width: 20px;
-    height: 20px;
+input {
+    width: auto;
 }
 
+.button{
+    float: right;
+}
+.button2 {
+    float: right;
+    margin-right: 5px;
+}
 .textarea {
     width: 400px;
-    height: 130px;
+    height: 150px;
 }
-#geslacht {
+.geslacht {
     display: inline-flex;
+    grid-column: 2/3;
 }

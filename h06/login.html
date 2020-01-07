@@ -44,28 +44,29 @@
     <form action="/action_page.php" method="post"></form>
 
     <label>Geslacht</label>
-    <div id="geslacht">
-        <input type="radio" name="geslacht" value="man"/>
+    <div class="geslacht">
+        <input class="geslacht" type="radio" name="geslacht" value="man"/>
         <label>Man</label>
-        <input type="radio" name="geslacht" value="vrouw">
+        <input class="geslacht" type="radio" name="geslacht" value="vrouw">
         <label>Vrouw</label>
     </div>
     <br><br>
-    <select name="kleur ogen">
-        <option>Kleur Ogen:</option>
-        <option>Blauw</option>
-        <option>Bruin</option>
+        <label>Kleur ogen</label>
+        <select name="kleur ogen" name="Kleur ogen">
         <option>Groen</option>
+        <option>Bruin</option>
+        <option>Blauw</option>
     </select>
     <br><br>
-
+    <label>Geboortedatum</label>
     <input type="date" name="geboortedatum"/>
-
+    <br><br>
+    <label>Omschrijving</label>
     <div class="textarea">
         <textarea class="textarea" name="omschrijving"></textarea>
-        <input type="submit" name="knop">
-        <input class="reset" type="reset" name="knop">
     </div>
+        <input class="button" type="submit" name="knop">
+        <input class="button2" type="reset" name="knop">
 </form>
 </body>
 </html>

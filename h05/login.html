@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" a href="css/login.css">
+    <title>Voorbeeldformulier</title>
+</head>
+<body>
+<style>
+    input.larger {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+<form action="https://www.savatarian.com/html5/form.php" method="get">
+    <h1>Voorbeeldformulier</h1>
+
+    <label for="voornaam">Voornaam</label>
+    <input class="text" id="voornaam" type="text" name="voornaam">
+
+    <label>Lekker eten:</label>
+    <div class="eten">
+        <input type="checkbox" class="larger">
+        <label>Sperziebonen</label>
+        <br><br>
+    </div>
+
+    <label for="tussenvoegsel">Tussenvoegsel</label>
+    <input class="text" id="tussenvoegsel" type="text" name="tussenvoegsel">
+
+    <div class="eten">
+        <input type="checkbox" class="larger">
+        <label>Aardappelen</label>
+        <br><br>
+    </div>
+
+    <label for="achternaam">Achternaam</label>
+    <input class="text" id="achternaam" type="text" name="achternaam">
+    <div class="eten">
+        <input type="checkbox" class="larger">
+        <label>hamburger</label>
+        <br><br>
+    </div>
+    <form action="/action_page.php" method="post"></form>
+
+    <label>Geslacht</label>
+    <div id="geslacht">
+        <input type="radio" name="geslacht" value="man"/>
+        <label>Man</label>
+        <input type="radio" name="geslacht" value="vrouw">
+        <label>Vrouw</label>
+    </div>
+    <br><br>
+    <select name="kleur ogen">
+        <option>Kleur Ogen:</option>
+        <option>Blauw</option>
+        <option>Bruin</option>
+        <option>Groen</option>
+    </select>
+    <br><br>
+
+    <input type="date" name="geboortedatum"/>
+
+    <div class="textarea">
+        <textarea class="textarea" name="omschrijving"></textarea>
+        <input type="submit" name="knop">
+        <input class="reset" type="reset" name="knop">
+    </div>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+* {
+    border: dotted 1px grey;
+    align-self: center;
+}
+
+body {
+    margin: 0px;
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 15% 35% 10% 40%;
+}
+
+div.form-group {
+    width: 300px;
+    display: flex;
+}
+
+h1 {
+    grid-column: 1/5;
+}
+
+.eten {
+    display: flex;
+    grid-column: 4/5;
+}
+
+
+
+input.eten {
+    width: 20px;
+    height: 20px;
+}
+
+.textarea {
+    width: 400px;
+    height: 130px;
+}
+#geslacht {
+    display: inline-flex;
+}

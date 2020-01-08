@@ -2,71 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" a href="css/login.css">
     <title>Voorbeeldformulier</title>
 </head>
 <body>
 <style>
-    input.larger {
-        width: 20px;
-        height: 20px;
+    form ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+    form ul li {
+        padding: 10px;
+    }
+    form ul li input {
+        position: absolute;
+        left: 150px;
     }
 </style>
 <form action="https://www.savatarian.com/html5/form.php" method="get">
-    <h1>Voorbeeldformulier</h1>
+    <ul>
+        <li>
+            <h2>Burton Education</h2>
+            <span class="verplicht">* verplicht veld</span>
+        </li>
+        <li>
+            <label for="voornaam">Voornaam:</label>
+            <input type="text" name="voornaam" id="voornaam">
+        </li>
+        <li>
+            <label for="achternaam">Achternaam:</label>
+            <input type="text" name="achternaam" id="achternaam">
+        </li>
+        <li>
+            <input type="submit" name="knop">
+        </li>
+    </ul>
 
-    <label for="voornaam">Voornaam</label>
-    <input class="text" id="voornaam" type="text" name="voornaam">
 
-    <label>Lekker eten:</label>
-    <div class="eten">
-        <input type="checkbox" class="larger">
-        <label>Sperziebonen</label>
-        <br><br>
-    </div>
-
-    <label for="tussenvoegsel">Tussenvoegsel</label>
-    <input class="text" id="tussenvoegsel" type="text" name="tussenvoegsel">
-
-    <div class="eten">
-        <input type="checkbox" class="larger">
-        <label>Aardappelen</label>
-        <br><br>
-    </div>
-
-    <label for="achternaam">Achternaam</label>
-    <input class="text" id="achternaam" type="text" name="achternaam">
-    <div class="eten">
-        <input type="checkbox" class="larger">
-        <label>hamburger</label>
-        <br><br>
-    </div>
-    <form action="/action_page.php" method="post"></form>
-
-    <label>Geslacht</label>
-    <div class="geslacht">
-        <input class="geslacht" type="radio" name="geslacht" value="man"/>
-        <label>Man</label>
-        <input class="geslacht" type="radio" name="geslacht" value="vrouw">
-        <label>Vrouw</label>
-    </div>
-    <br><br>
-        <label>Kleur ogen</label>
-        <select name="kleur ogen" name="Kleur ogen">
-        <option>Groen</option>
-        <option>Bruin</option>
-        <option>Blauw</option>
-    </select>
-    <br><br>
-    <label>Geboortedatum</label>
-    <input type="date" name="geboortedatum"/>
-    <br><br>
-    <label>Omschrijving</label>
-    <div class="textarea">
-        <textarea class="textarea" name="omschrijving"></textarea>
-    </div>
-        <input class="button" type="submit" name="knop">
-        <input class="button2" type="reset" name="knop">
 </form>
 </body>
 </html>
